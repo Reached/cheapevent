@@ -52,7 +52,7 @@ Copyright &copy; Cheapevent 2014. | CVR:
 </footer>
 
 <!-- Load JS here for greater good =============================-->
-{{ HTML::script('js/untitled.js') }}
+{{ HTML::script('js/production.min.js') }}
 
 </body>
 

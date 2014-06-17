@@ -48,7 +48,7 @@
 
       @yield('content-manage-categories')
 
-    {{ HTML::script('js/untitled.js') }}
+    {{ HTML::script('js/production.min.js') }}
 
     </body>
 
