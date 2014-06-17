@@ -26,5 +26,4 @@ Route::group(array('before' => 'auth'), function()
 	Route::get('/admin/orders', array('uses'=>'AdminController@getOrders'));
 	Route::controller('admin/categories', 'CategoriesController');
 	Route::controller('admin/products', 'ProductsController');
-	Route::get('/users/signout', array('uses'=>'UsersController@getSignOut'));
 });
