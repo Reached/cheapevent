@@ -19,6 +19,7 @@ class UsersController extends BaseController {
 
  	public function getSignout() {
  		Auth::logout();
+ 		Session::flush();
  		return Redirect::to('users/signin')->with('message', 'Du blev logget ud');
  	}
 }
