@@ -28,7 +28,7 @@ return array(
 	|
 	*/
 
-	'host' => 'smtp.gmail.com',
+	'host' => 'smtp.sendgrid.net',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'casper.aarby.sorensen@gmail.com', 'name' => 'Casper Sørensen'),
+	'from' => array('address' => 'info@cheapevent.com', 'name' => 'Mathias Woetmann Uhre'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'casper.skrill@gmail.com',
+	'username' => 'Reached',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'hp6r6rxm',
+	'password' => 'Caspers88',
 
 	/*
 	|--------------------------------------------------------------------------
