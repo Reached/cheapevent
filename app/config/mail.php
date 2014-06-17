@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'casper.aarby.sorensen@gmail.com',
+	'username' => 'casper.skrill@gmail.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'Generation88',
+	'password' => 'hp6r6rxm',
 
 	/*
 	|--------------------------------------------------------------------------
