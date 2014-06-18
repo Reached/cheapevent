@@ -41,15 +41,6 @@ class OrdersController extends Basecontroller {
 		        	->subject("Ny ordre");
 		    });
 
-		    // Email confirmation for the customer
-
-		    Mail::send('emails.order_confirmation', $data, function($message) use ($order)
-		    {
-		        $message->to($order->email)
-		        	->subject("Bestillingsbekræftelse");
-		    });
-
-
 			// Return a successful json response to our view
 
 			return Response::json(['success'=>'true']);
