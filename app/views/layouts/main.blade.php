@@ -107,7 +107,6 @@
         <h2 class="text-center small-title">Nyeste aktiviteter</h2>
         <p class="lead text-center">Nedenfor kan du se vores nyeste akviteter. Du booker en akvitivet ved at vælge "Vælg aktivitet".</p>
         <div class="container">
-            <div class="owl-carousel" id="owl-carousel">
               @foreach($products as $product)
               @if ( $product->availability == 1 )
               <article class="box" id="activityGroup">
@@ -123,7 +122,6 @@
               </article>
               @endif
               @endforeach
-            </div>
             <div class="text-center" style="margin-top: 25px;" id="fadeOutBox">
               <a href="/kategorier" class="btn btn-lg btn-default">Klik her for at se alle vores aktiviteter</a>
             </div>
@@ -226,7 +224,9 @@
     <p class="footer-copyright text-center">Copyright &copy; Cheapevent 2014. | CVR: </p>
   </footer>
 
-  <!-- Load JS here for greater good =============================-->
-  {{ HTML::script('js/production.min.js') }}
+  <!-- Load JS here for greater good =============================-->  
+  {{ HTML::script('//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js') }}
+    {{ HTML::script('js/justajax.js') }}
+
 </body>
 </html>

@@ -15,7 +15,7 @@ $("#tryitForm").submit(function(e) {
         $('.help-block').remove(); // remove the error text
 
 
-        var url = "/orders/create"; // the script where you handle the form input.
+        var url = "{{URL::action('OrdersController@postCreate')}}"; // the script where you handle the form input.
         var form = $('#tryitForm');
         var info = $('#infoBox');
 

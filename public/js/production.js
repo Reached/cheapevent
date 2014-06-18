@@ -2904,6 +2904,7 @@ a||i.data("DateTimePicker",new n(this,t))})}});
 
 
         var url = "/orders/create"; // the script where you handle the form input.
+        
         var form = $('#tryitForm');
         var info = $('#infoBox');
 
