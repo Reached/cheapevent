@@ -56,7 +56,7 @@ return array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
 			'database'  => 'cheapevent',
-			'username'  => 'forge',
+			'username'  => 'root',
 			'password'  => 'FPcPKK4gtgJ5sFPhYa2E',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',

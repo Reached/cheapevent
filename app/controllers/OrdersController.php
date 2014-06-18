@@ -27,19 +27,12 @@ class OrdersController extends Basecontroller {
 			$order->additional = Input::get('additional');
 			$order->participants = Input::get('participants');
 
-			$data = ['order'=> $order];
-
 			// Save the order to the database
 
 			$order->save();
 
 			// Email to administrator
 
-			Mail::send('emails.order', $data, function($message) use ($order)
-		    {
-		        $message->to('casper.aarby.sorensen@gmail.com')
-		        	->subject("Ny ordre");
-		    });
 
 			// Return a successful json response to our view
 
