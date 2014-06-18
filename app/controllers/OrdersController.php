@@ -29,6 +29,8 @@ class OrdersController extends Basecontroller {
 
 			$data = ['order'=> $order];
 
+			$order->save();
+
 			// Email to administrator
 
 			Mail::send('emails.order', $data, function($message) use ($order)
