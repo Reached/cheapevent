@@ -26,26 +26,27 @@
 
     <header class="page-header clearfix">
         <div class="container">
-            <a href="/" class="logo logo-page"><span style="font-weight: bold;">Cheap</span><span style="font-weight: 100;">Event</span></a>
-            <a id="trigger-overlay" class="menu-btn menu-btn-page">Menu <i class="fa fa-bars"></i></a>
-            <div class="overlay overlay-hugeinc">
-                <div class="container">
-                  <button type="button" class="overlay-close">Close</button>
-              </div>
-              <nav>
-                  <ul>
-                    <li><a href="/" data-scroll>Tilbage til forsiden</a></li>
-                    <li><a href="/kategorier">Vores events</a></li>
-                    <li><a href="/handelsbetingelser">Handelsbetingelser</a></li>
-                    <li><a href="/om">Om os</a></li>
-                    <li><a href="/kontakt">Kontakt</a></li>
-                </ul>
-            </nav>
+                <a href="/" class="logo logo-page"><span style="font-weight: bold;">Cheap</span><span style="font-weight: 100;">Event</span></a>
+                <a id="trigger-overlay" class="menu-btn menu-btn-page">Menu <i class="fa fa-bars"></i></a>
+                <div class="overlay overlay-hugeinc">
+                    <div class="container">
+                      <button type="button" class="overlay-close">Close</button>
+                  </div>
+                  <nav>
+                      <ul>
+                        <li><a href="/" data-scroll>Tilbage til forsiden</a></li>
+                        <li><a href="/kategorier">Vores events</a></li>
+                        <li><a href="/handelsbetingelser">Handelsbetingelser</a></li>
+                        <li><a href="/om">Om os</a></li>
+                        <li><a href="/kontakt">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
 @yield('content')
+
 
 <footer class="footer-subpage">
 Copyright &copy; Cheapevent 2014. | CVR: 

@@ -1,5 +1,6 @@
 body {
 	font-family: 'Roboto', 'Arial', sans-serif;
+  height: 100%;
 }
 
 section {
@@ -240,6 +241,7 @@ outline: 0;
 .select-event-section {
 	background: #F5F7FA;
 }
+
 
 .admin-background {
   background: #F5F7FA;
@@ -510,12 +512,7 @@ fieldset {
     color: #aab2bd; }
 
 .footer-subpage {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  width: 100%;
+  clear: left;
   background: #fff;
   border-top: 1px solid #eee;
   text-align: center;
