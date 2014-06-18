@@ -2910,7 +2910,6 @@ a||i.data("DateTimePicker",new n(this,t))})}});
         $('#loadingImage').show();
         $(":submit").attr("disabled", true);
 
-
         $.ajax({
          type: "POST",
          dataType: 'json',
