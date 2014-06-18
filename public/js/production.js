@@ -2904,7 +2904,7 @@ a||i.data("DateTimePicker",new n(this,t))})}});
 
 
         var url = "/orders/create"; // the script where you handle the form input.
-        
+
         var form = $('#tryitForm');
         var info = $('#infoBox');
 
@@ -2962,6 +2962,7 @@ a||i.data("DateTimePicker",new n(this,t))})}});
                       form.addClass('form-after-submit').html("<h1><i class='fa fa-check-circle' style='color: #37BC9B; font-size: 70px;'></i><br>Tak for din bestilling.</h1><p class='lead'>Vi vender tilbage indenfor 24 timer, hvis du har yderligere spørgsmål er du velkommen til at <a href='#'>kontakte</a> os.</p>");
                       $('form-after-submit').fadeIn("slow");
                     }
+                    form.fadeOut('slow');
 
                   },
                   error: function(){}
