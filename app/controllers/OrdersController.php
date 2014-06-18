@@ -29,6 +29,8 @@ class OrdersController extends Basecontroller {
 
 			$data = ['order'=> $order];
 
+			// Save the order to the database
+
 			$order->save();
 
 			// Email to administrator
@@ -47,9 +49,6 @@ class OrdersController extends Basecontroller {
 		        	->subject("Bestillingsbekræftelse");
 		    });
 
-		    // Save the order to the database
-
-			$order->save();
 
 			// Return a successful json response to our view
 
