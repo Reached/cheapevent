@@ -28,7 +28,7 @@ return array(
 	|
 	*/
 
-	'host' => 'smtp.sendgrid.net',
+	'host' => 'smtp.mandrillapp.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'Caspers88',
+	'password' => '67YOsxJ-BBBJMxNhWS-Wpg',
 
 	/*
 	|--------------------------------------------------------------------------
