@@ -19,7 +19,6 @@ Route::get('/kategorier', array('uses'=>'PageController@getCategoryPage'));
 Route::controller('store', 'StoreController');
 Route::controller('users', 'UsersController');
 Route::controller('orders', 'OrdersController');
-Route::get('/orders/create', array('as' => 'postCreate', 'uses' => 'OrdersController@postCreate'));
 Route::controller('contact', 'ContactController');
 Route::get('/sign-out', array('as' => 'getSignout', 'uses' => 'UsersController@getSignout'));
 Route::group(array('before' => 'auth'), function()
