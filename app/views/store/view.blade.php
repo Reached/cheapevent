@@ -2,7 +2,6 @@
 
 @section('content')
 
-<div class="container">
   <div class="row">
     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
       {{ Form::open(array('url'=>'/orders/create', 'id'=>'tryitForm', 'tabindex'=>'1')) }}
@@ -14,11 +13,6 @@
         <div class="col-lg-8 col-xs-12">
           <h2 class="activity-title">{{ $product->title }}</h2>
           <p class="activity-description">{{ $product->description }}</p>
-          <hr>
-          <div class="radios">
-            <input type="radio" name="activity_title" value="{{ $product->title }}" id="{{ $product->id }}">
-            <label class="radio" for="{{ $product->id }}" id="labelText">Bestil aktivitet</label>
-          </div>
         </div>
       </div>
     </div>
@@ -31,6 +25,10 @@
           <li>Aktivitetstype: <strong>{{ $product->indooroutdoor }}</strong></li>
           <li>Andet: <em>{{ $product->notes }}</em></li>
         </ul>
+            <div class="radios">
+            <input type="radio" name="activity_title" value="{{ $product->title }}" id="{{ $product->id }}">
+            <label class="radio" for="{{ $product->id }}" id="labelText">Bestil aktivitet</label>
+          </div>
       </div>
     </div>
   </div>
