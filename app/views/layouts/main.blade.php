@@ -219,6 +219,9 @@
     </div>
     <p class="footer-copyright text-center">Copyright &copy; Cheapevent 2014. | CVR: </p>
   </footer>
+  <div id="form-after-submit">
+  <h1><i class='fa fa-check-circle' style='color: #37BC9B; font-size: 70px;'></i><br>Tak for din bestilling.</h1><p class='lead'>Vi vender tilbage indenfor 24 timer, hvis du har yderligere spørgsmål er du velkommen til at <a href='#'>kontakte</a> os.</p>
+  </div>
 
   <!-- Load JS here for greater good =============================-->
   {{ HTML::script('js/production.js') }}

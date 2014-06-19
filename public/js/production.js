@@ -2960,10 +2960,10 @@ a||i.data("DateTimePicker",new n(this,t))})}});
                         $('#participantsGroup').append('<div class="help-block">' + data.error.participants + '</div>'); // add the actual error message under our input
                       }
                     } else {
-                      form.addClass('form-after-submit').html("<h1><i class='fa fa-check-circle' style='color: #37BC9B; font-size: 70px;'></i><br>Tak for din bestilling.</h1><p class='lead'>Vi vender tilbage indenfor 24 timer, hvis du har yderligere spørgsmål er du velkommen til at <a href='#'>kontakte</a> os.</p>");
-                      $('form-after-submit').fadeIn("slow");
+                      form.hide();
+                      $('#form-after-submit').fadeIn(3000);
                     }
-                    form.fadeOut('slow');
+                    $('#form-after-submit').delay(15000).fadeOut(3000);
 
                   },
                   error: function(){}

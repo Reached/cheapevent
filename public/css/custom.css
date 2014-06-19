@@ -198,7 +198,12 @@ outline: 0;
   }
 }
 
-.form-after-submit {
+#form-after-submit {
+  z-index: 9999999;
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 5%;
   width: 90%;
   min-height: 350px;
   background: #fff;
