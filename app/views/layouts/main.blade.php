@@ -109,7 +109,7 @@
             <article class="col-lg-5 col-md-5 col-sm-5 content-description">
                       
               <p class="lead">{{Str::limit($product->description, 150) }}</p>
-              <a href="#">Læs mere</i></a>
+              {{ HTML::link('/store/view/'.$product->id, 'Læs mere') }}
 
             </article>
             <article class="col-lg-offset-2 col-lg-4 col-md-4 col-md-offset-2">
