@@ -1,11 +1,6 @@
 body {
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: 'Roboto', 'Helvetica-neue', 'Helvetica', 'Arial', sans-serif;
   height: 100%;
-}
-
-section {
-	padding: 10px 0px;
-	border-bottom: 1px solid #eee;
 }
 
 .standard-padding {
@@ -106,6 +101,11 @@ outline: 0;
   letter-spacing: 2px;
 }
 
+.about-section {
+  padding: 25px;
+    border-bottom: 3px solid #eee;
+}
+
 .references-section {
   background: #eee;
 }
@@ -122,16 +122,20 @@ outline: 0;
 }
 
 .circle-step {
-  height: 80px;
-  width: 80px;
-  border-radius: 40px;
   text-align: center;
-  line-height: 80px;
-  font-size: 25px;
-  font-weight: bold;
-  color: inherit;
-  margin: 0 auto;
-  border: 2px dashed #333;
+  font-size: 75px;
+}
+
+.step1 {
+  color: gold;
+}
+
+.step2 {
+  color: tomato;
+}
+
+.step3 {
+  color: steelblue;
 }
 
 .step-text {
@@ -242,6 +246,70 @@ outline: 0;
 	background: #F5F7FA;
 }
 
+.box.select-event-box {
+  padding: 25px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.headline-section {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 25px 0;
+}
+
+.activity-title-headline {
+  font-size: 35px;
+  font-weight: bold;
+  float: left;
+}
+
+.see-all-link {
+  font-size: 35px;
+  color: #ccc;
+  margin-top: 20px;
+  line-height: 75px;
+}
+
+.included-in-price {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.content-section-fp {
+  padding: 0 0 50px;
+}
+
+.content-section-fp a {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.content-description {
+  margin-bottom: 25px;
+}
+
+.activity-image-fp {
+  height: 70px;
+  width: 70px;
+  margin-right: 15px;
+}
+
+.activity-image-fp:active {
+  zoom: 200%;
+}
+
+
+.activity-price.activity-price-fp {
+  color: #ccc;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.order-now-title {
+  font-size: 25px;
+}
 
 .admin-background {
   background: #F5F7FA;
@@ -378,9 +446,6 @@ li.admin-activity {
   transition: all .3s;
 }
 
-.log-out-button:hover {
-}
-
 .submit-info-section {
   background: #fff;
 }
@@ -420,17 +485,21 @@ li.admin-activity {
 }
 
 .radios .radio{
+  border-bottom: 2px solid #E94E42;
+  cursor: pointer;
   margin-top: 15px;
-	padding: 15px;
-  background-color: #eee;
-  color: inherit;
+	padding: 10px;
+  background-color: tomato;
+  color: #fff;
   display:inline-block;
-  height: 100%;
   width: 100%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 
 label.radio {
-	font-size: 15px;
+	font-size: 18px;
 	color: #333;
   padding: 0;
   margin: 0;
@@ -455,7 +524,11 @@ label.radio {
 
 .radios input[type=radio]:checked + .radio {
 	color: #fff;
-	background: #5CB85C;
+	background: teal;
+  border-bottom: none;
+  -moz-box-shadow:    inset 0 0 3px #000000;
+  -webkit-box-shadow: inset 0 0 3px #000000;
+  box-shadow:         inset 0 0 3px #000000;
 }
 
 fieldset {
@@ -530,17 +603,7 @@ fieldset {
 
 .small-title {
 	margin-bottom: 50px;
-}
-
-.small-title:after {
-  content: '';
-  width: 55px;
-  height: 4px;
-  background: rgb(0,183,234);
-  display: block;
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 35px;
 }
 
 .bv-form .help-block {
@@ -604,13 +667,13 @@ a:hover {
   color: #fff;
   cursor: pointer;
   transition: all .2s;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .menu-btn-page {
   color: inherit;
   font-size: 25px;
-  padding: 10px;
+  padding-top: 15px;
 }
 
 #pagination {
@@ -1046,6 +1109,9 @@ a:hover {
     width: 100%;
     background: #fff;
     border-bottom: 3px solid #eee;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 4px;
 }
 
 .box:focus {

@@ -10,7 +10,7 @@ class StoreController extends BaseController {
 	public function getIndex() {
 
 		$topItems = Popularity::getStats('one_day_stats', 'DESC', '', 3);
-		$products = Product::take(4)->orderBy('created_at', 'ASC', '', 3)->get();
+		$products = Product::take(1)->orderBy('id', 'DESC')->get();
 
 		return View::make('store.index')->with('products', $products);
 

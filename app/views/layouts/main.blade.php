@@ -78,16 +78,16 @@
            <div class="col-lg-12">
             <div class="row">
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="circle-step">1</div>
-                <p class="step-text text-center"><strong>Vælg</strong> en aktivitet der passer til dine ønsker.</p>
+                <div class="circle-step step1"><i class="fa fa-lightbulb-o"></i></div>
+                <p class="step-text"><strong>1. Vælg</strong> en aktivitet der passer til dine ønsker.</p>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="circle-step">2</div>
-                <p class="step-text text-center"><strong>Indtast</strong> dine personlige oplysninger og send din bestilling.</p>
+                <div class="circle-step step2"><i class="fa fa-list-alt"></i></div>
+                <p class="step-text"><strong>2. Indtast</strong> dine personlige oplysninger og send din bestilling.</p>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="circle-step">3</div>
-                <p class="step-text text-center"><strong>Vi</strong> tager hånd om din booking, og vender tilbage inden 24 timer.</p>
+                <div class="circle-step step3"><i class="fa fa-magic"></i></div>
+                <p class="step-text"><strong>3. Vi</strong> tager hånd om din booking, og vender tilbage inden 24 timer.</p>
               </div>
             </div>
           </div>
@@ -95,48 +95,42 @@
       </div>
     </section>
 
-    @if(Session::has('message'))
-    <p class="alert warning">{{ Session::get('message') }}</p>
-    @endif
-
     {{ Form::open(array('url'=>'/orders/create', 'id'=>'tryitForm', 'tabindex'=>'1')) }}
     {{ Form::hidden('id') }}
-    <section class="select-event-section clearfix" id="book">
-     <div class="container">
-      <div class="row">
-        <h2 class="text-center small-title">Nyeste aktiviteter</h2>
-        <p class="lead text-center">Nedenfor kan du se vores nyeste akviteter. Du booker en akvitivet ved at vælge "Vælg aktivitet".</p>
-        <div class="container">
-            <div class="owl-carousel" id="owl-carousel">
-              @foreach($products as $product)
-              @if ( $product->availability == 1 )
-              <article class="box" id="activityGroup">
-                {{ HTML::image($product->image, $product->title, array('class'=>'activity-img')) }}
-                <h2 class="activity-title">{{ HTML::link('/store/view/'.$product->id, $product->title) }}</h2>
-                <p class="activity-description">{{Str::limit($product->description, 150) }}</p>
-                <hr>
-                <p class="activity-price">{{ $product->price }},-</p>
-                <div class="radios">
-                  <input type="radio" name="activity_title" value="{{ $product->title }}" id="{{ $product->id }}">
-                  <label class="radio" for="{{ $product->id }}" id="{{ $product->id }}">Vælg aktivitet</label>
-                </div>
-              </article>
-              @endif
-              @endforeach
-            </div>
-            <div class="text-center" style="margin-top: 25px;" id="fadeOutBox">
-              <a href="/kategorier" class="btn btn-lg btn-default">Klik her for at se alle vores aktiviteter</a>
-            </div>
-        </div>
+    <section class="select-event-section" id="book">
+    @foreach($products as $product)
+    <div class="headline-section">
+      <div class="container">
+        <h3 class="activity-title-headline">{{ HTML::image($product->image, $product->title, array('class'=>'activity-image-fp')) }} {{ $product->title }}</h3>
       </div>
     </div>
-  </section>
+      <div class="container">
+        <div class="row content-section-fp">
+            <article class="col-lg-5 col-md-5 col-sm-5 content-description">
+                      
+              <p class="lead">{{Str::limit($product->description, 150) }}</p>
+              <a href="#">Læs mere</i></a>
+
+            </article>
+            <article class="col-lg-offset-2 col-lg-4 col-md-4 col-md-offset-2">
+              <div class="box select-event-box">
+              <h4 class="text-center order-now-title"><strong>Info</strong></h4>
+                <p class="activity-price activity-price-fp text-center">{{ $product->price }},- Dkk / {{ $product->participants }} personer</p>
+                  <div class="radios">
+                  <input type="radio" name="activity_title" value="{{ $product->title }}" id="{{ $product->id }}">
+                  <label class="radio" for="{{ $product->id }}" id="labelText">Bestil nu</label>
+                </div>
+              </div>
+            </article>
+          @endforeach
+      </div>
+    </div>
+    </section>
 
   <section class="submit-info-section clearfix" id="fadeInGroup">
     <div class="container">
       <div class="row">
-        <h2 class="text-center small-title">Bestilling</h2>
-        <p class="lead text-center">Udfyld dine oplysninger nedenfor, så vi kan hjælpe dig med netop din aktivitet.</p>
+        <h2 class="text-center small-title">Fortsæt bestilling</h2>
         <div class="form-group col-lg-12 form-group-front-page" id="dateGroup">
           <label>Vælg et tidspunkt for afholdelse af <span id="choice"></span></label>
           <div class='input-group date' data-date-format="YYYY/MM/DD HH:MM" id='timePicker'>
@@ -227,6 +221,6 @@
   </footer>
 
   <!-- Load JS here for greater good =============================-->
-  {{ HTML::script('js/production.min.js') }}
+  {{ HTML::script('js/production.js') }}
 </body>
 </html>
