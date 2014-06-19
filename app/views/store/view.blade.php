@@ -1,7 +1,7 @@
 @extends('layouts.page')
 
 @section('content')
-
+<div class="container">
   <div class="row">
     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
       {{ Form::open(array('url'=>'/orders/create', 'id'=>'tryitForm', 'tabindex'=>'1')) }}
@@ -87,5 +87,6 @@
     </div>
     {{ Form::close() }}
   </section>
+</div>
 </div>
 @stop
