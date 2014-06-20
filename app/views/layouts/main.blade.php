@@ -130,6 +130,7 @@
   <section class="submit-info-section clearfix" id="fadeInGroup">
     <div class="container">
       <div class="row">
+      <div class="box submit-section-box">
         <h2 class="text-center small-title">Fortsæt bestilling</h2>
         <div class="form-group col-lg-12 form-group-front-page" id="dateGroup">
           <label>Vælg et tidspunkt for afholdelse af <span id="choice"></span></label>
@@ -167,6 +168,10 @@
         <label class="control-label">Antal deltagere</label>
         <input type="number" min="1" name="participants" class="form-control" placeholder="Antal deltagere">
       </div>
+      <div class="form-group col-lg-6 form-group-front-page" id="phoneGroup">
+        <label class="control-label">Telefon</label>
+        <input type="phone" min="1" name="phone" class="form-control" placeholder="Dit telefonnummer" id="phone">
+      </div>
       <div class="form-group col-lg-6 form-group-front-page">
         <label class="control-label">Eventuelle bemærkninger</label>
         <textarea class="form-control" name="additional" placeholder="Eventuelle bemærkninger"></textarea>
@@ -176,8 +181,9 @@
         <h3>Sender din bestilling..</h3>
       </div>
       <div class="form-group col-lg-12">
-        <button type="submit" class="btn btn-lg btn-warning margin-top">Bestil </button>
+        <button type="submit" class="btn btn-lg btn-warning margin-top pull-right">Afslut bestilling</button>
       </div>
+    </div>
     </div>
   </div>
   {{ Form::close() }}

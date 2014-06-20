@@ -22,7 +22,7 @@ outline: 0;
 
 .form-group-front-page {
   padding-right: 25px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .form-signin {
@@ -260,13 +260,36 @@ outline: 0;
   width: 100%;
   height: auto;
   margin-bottom: 15px;
-  padding: 25px 0;
 }
 
 .activity-title-headline {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
   float: left;
+}
+
+.form-control {
+  border: 2px solid #eee;
+  height: 45px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .01);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .01);
+}
+
+.form-control:focus {
+  outline: 0;
+  border: 2px solid rgb(0,183,234);;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.has-error .form-control {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .01);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .01);
+}
+.has-error .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .see-all-link {
@@ -303,7 +326,6 @@ outline: 0;
 .activity-image-fp:active {
   zoom: 200%;
 }
-
 
 .activity-price.activity-price-fp {
   color: #ccc;
@@ -451,7 +473,11 @@ li.admin-activity {
 }
 
 .submit-info-section {
-  background: #fff;
+  background: #F5F7FA;
+}
+
+.submit-section-box {
+  padding: 35px;
 }
 
 .activity-image {
@@ -512,7 +538,7 @@ label.radio {
 }
 
 #choice {
-	color: #5CB85C;
+	color: teal;
 	font-weight: bold;
 }
 
@@ -658,6 +684,10 @@ fieldset {
 }.btn-fp:active {
   position:relative;
   top:1px;
+}
+
+.input-group-addon {
+  border: 2px solid #eee;
 }
 
 a:hover {

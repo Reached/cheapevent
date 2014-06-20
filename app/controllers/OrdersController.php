@@ -26,6 +26,7 @@ class OrdersController extends Basecontroller {
 			$order->city = Input::get('city');
 			$order->additional = Input::get('additional');
 			$order->participants = Input::get('participants');
+			$order->phone = Input::get('phone');
 
 			$data = ['order'=> $order];
 

@@ -13,6 +13,7 @@ class Order extends Eloquent {
 		'streetName'=>'required|min:2',
 		'zip'=>'required|numeric|min:1000|max:9999',
 		'city'=>'required|min:2|',
-		'participants'=>'required|min:1|numeric'
+		'participants'=>'required|min:1|numeric',
+		'phone'=>'required|'
 		);
 }

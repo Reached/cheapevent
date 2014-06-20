@@ -122,7 +122,10 @@ return array(
 			'required' => 'Du skal angive antal deltagere.',
 			'numeric' => 'Du skal indtaste et gyldigt antal deltagere (kun tal)',
 		),
-
+		'phone' => array(
+			'required' => 'Du skal angive dit telefonnummer',
+			'numeric' => 'Du må kun anvende tal.',
+		),
 	),
 
 	/*

@@ -44,6 +44,9 @@
 				<strong>Email:</strong> {{ $order->email }}
 			</li>
 			<li>
+				<strong>Telefon:</strong> {{ $order->phone }}
+			</li>
+			<li>
 				<strong>Vejnavn og nr:</strong> {{ $order->streetName }}
 			</li>
 			<li>
