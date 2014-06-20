@@ -27,7 +27,7 @@
     <header class="page-header clearfix">
         <div class="container">
                 <a href="/" class="logo logo-page"><span style="font-weight: bold;">Cheap</span><span style="font-weight: 100;">Event</span></a>
-                <a id="trigger-overlay" class="menu-btn menu-btn-page">Menu <i class="fa fa-bars"></i></a>
+                <a id="trigger-overlay" class="menu-btn menu-btn-page"><i class="fa fa-bars"></i></a>
                 <div class="overlay overlay-hugeinc">
                     <div class="container">
                       <button type="button" class="overlay-close">Close</button>

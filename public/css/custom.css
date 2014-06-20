@@ -674,11 +674,38 @@ a:hover {
   padding-top: 15px;
 }
 
+.menu-btn:before {
+  display: none;
+  content: "Menu";
+  padding-right: 10px;
+}
+
 .menu-btn-page {
   color: inherit;
   font-size: 25px;
   padding-top: 15px;
 }
+
+.menu-btn-page:before {
+  display: none;
+  content: "Menu";
+  padding-right: 10px;
+}
+
+@media (min-width: 768px) { 
+  .menu-btn:before {
+    display: inline-block;
+    content: "Menu";
+    padding-right: 10px;
+  }
+
+  .menu-btn-page:before {
+  display: inline-block;
+  content: "Menu";
+  padding-right: 10px;
+}
+
+ }
 
 #pagination {
   float: left;
