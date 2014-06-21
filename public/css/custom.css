@@ -271,6 +271,7 @@ text-shadow:4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.01);
   height: 45px;
   -webkit-box-shadow: none;
           box-shadow: none;
+          -webkit-appearance:none;
 }
 
 .form-control:focus {
@@ -278,16 +279,19 @@ text-shadow:4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.01);
   border: 2px solid rgb(0,183,234);;
   -webkit-box-shadow: none;
           box-shadow: none;
+          -webkit-appearance:none;
 }
 
 .has-error .form-control {
   border-color: #a94442;
   -webkit-box-shadow: none;
           box-shadow: none;
+          -webkit-appearance:none;
 }
 .has-error .form-control:focus {
   -webkit-box-shadow: none;
           box-shadow: none;
+          -webkit-appearance:none;
 }
 
 .see-all-link {
