@@ -269,8 +269,8 @@ text-shadow:4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.01);
 .form-control {
   border: 2px solid #eee;
   height: 45px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .01);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .01);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .form-control:focus {
@@ -282,8 +282,8 @@ text-shadow:4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.01);
 
 .has-error .form-control {
   border-color: #a94442;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .01);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .01);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 .has-error .form-control:focus {
   -webkit-box-shadow: none;
