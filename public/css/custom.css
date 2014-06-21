@@ -245,11 +245,12 @@ text-shadow:4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.01);
 }
 
 .select-event-section {
+  padding: 25px;
 	background: #F5F7FA;
 }
 
 .box.select-event-box {
-  padding: 25px;
+  padding: 0;
   margin: 0;
   margin-bottom: 25px;
 }
@@ -260,7 +261,24 @@ text-shadow:4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.01);
   margin-bottom: 15px;
 }
 
+.main-page-sub-title {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .main-page-sub-title {
+    font-size: 35px;
+  }
+}
+
+.important-info-list-fp {
+  font-size: 18px;
+  color: #777;
+}
+
 .activity-title-headline {
+  width: 100%;
   font-size: 25px;
   font-weight: bold;
   float: left;
@@ -864,7 +882,7 @@ a:hover {
 }
 
 .box {
-    margin: 25px 0 10px 0;
+    margin: 15px 0 15px 0;
     float: left;
     padding: 10px;
     height: 100%;

@@ -93,39 +93,40 @@
           </div>
         </div>
       </div>
+
     </section>
 
-    {{ Form::open(array('url'=>'/orders/create', 'id'=>'tryitForm', 'tabindex'=>'1')) }}
-    {{ Form::hidden('id') }}
-    <section class="select-event-section" id="book">
+  {{ Form::open(array('url'=>'/orders/create', 'id'=>'tryitForm', 'tabindex'=>'1')) }}
+  {{ Form::hidden('id') }}
+  <section class="select-event-section" id="book">
     @foreach($products as $product)
-    <div class="headline-section">
+    <h2 class="main-page-sub-title text-center">Udvalgte events</h2>
       <div class="container">
-        <h3 class="activity-title-headline">{{ HTML::image($product->image, $product->title, array('class'=>'activity-image-fp')) }} {{ $product->title }}</h3>
-      </div>
-    </div>
-      <div class="container">
-        <div class="row content-section-fp">
-            <article class="col-lg-5 col-md-5 col-sm-5 content-description">
-                      
-              <p class="lead">{{Str::limit($product->description, 150) }}</p>
-              {{ HTML::link('/store/view/'.$product->id, 'Læs mere') }}
-
-            </article>
-            <article class="col-lg-offset-2 col-lg-4 col-md-4 col-md-offset-2">
-              <div class="box select-event-box">
-              <h4 class="text-center order-now-title"><strong>Info</strong></h4>
-                <p class="activity-price activity-price-fp text-center">{{ $product->price }},- Dkk / {{ $product->participants }} personer</p>
+      <div class="row">
+        <div class="box">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          <h3 class="activity-title-headline">{{ HTML::image($product->image, $product->title, array('class'=>'activity-image-fp')) }} {{ $product->title }}</h3>
+            <p class="lead">{{Str::limit($product->description, 150) }}</p>
+            {{ HTML::link('/store/view/'.$product->id, 'Læs mere') }}
+        </div>
+          <div class="col-lg-offset-1 col-lg-5 col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-12">
+             <div class="box select-event-box">
+              <h4 class="text-center order-now-title"><strong>Vigtig info</strong></h4>
+                <ul class="important-info-list-fp">
+                  <li>{{ $product->price }},- Dkk</li> 
+                  <li>{{ $product->participants }} Max. personer</li>
+                </ul>
                   <div class="radios">
                   <input type="radio" name="activity_title" value="{{ $product->title }}" id="{{ $product->id }}">
                   <label class="radio" for="{{ $product->id }}" id="labelText">Bestil nu</label>
                 </div>
               </div>
-            </article>
-          @endforeach
+          </div>
+        </div>
       </div>
     </div>
-    </section>
+    @endforeach
+  </section>
 
   <section class="submit-info-section clearfix" id="fadeInGroup">
     <div class="container">
