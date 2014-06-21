@@ -78,15 +78,15 @@
            <div class="col-lg-12">
             <div class="row">
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="circle-step step1"><i class="fa fa-lightbulb-o"></i></div>
+                <div class="circle-step text-center">{{ HTML::image('images/check.png', 'Vælg en aktivitet') }}</div>
                 <p class="step-text"><strong>1. Vælg</strong> en aktivitet der passer til dine ønsker.</p>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="circle-step step2"><i class="fa fa-list-alt"></i></div>
+                <div class="circle-step text-center">{{ HTML::image('images/calendar.png', 'Indtast dine oplysninger') }}</div>
                 <p class="step-text"><strong>2. Indtast</strong> dine personlige oplysninger og send din bestilling.</p>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="circle-step step3"><i class="fa fa-magic"></i></div>
+                <div class="circle-step text-center">{{ HTML::image('images/support.png', 'Vi sørger for resten') }}</div>
                 <p class="step-text"><strong>3. Vi</strong> tager hånd om din booking, og vender tilbage inden 24 timer.</p>
               </div>
             </div>

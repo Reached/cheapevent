@@ -120,21 +120,9 @@ outline: 0;
   color: #ccc;
 }
 
-.circle-step {
-  text-align: center;
-  font-size: 75px;
-}
-
-.step1 {
-  color: gold;
-}
-
-.step2 {
-  color: tomato;
-}
-
-.step3 {
-  color: steelblue;
+.circle-step img {
+  height: 65px;
+  width: 65px;
 }
 
 .step-text {
