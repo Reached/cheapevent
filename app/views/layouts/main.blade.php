@@ -93,12 +93,11 @@
           </div>
         </div>
       </div>
-
     </section>
 
   {{ Form::open(array('url'=>'/orders/create', 'id'=>'tryitForm', 'tabindex'=>'1')) }}
   {{ Form::hidden('id') }}
-  <section class="select-event-section" id="book">
+  <section class="select-event-section added-padding" id="book">
     @foreach($products as $product)
     <h2 class="main-page-sub-title text-center">Udvalgte events</h2>
       <div class="container">
