@@ -6,7 +6,7 @@ class Order extends Eloquent {
 
 	public static $rules = array(
 		'activity_title'=>'required|min:2',
-		'date'=>'required|date_format:Y/m/d H:i',
+		'date'=>'required|date_format:Y/m/d',
 		'firstName'=>'required|min:2',
 		'lastName'=>'required|min:2',
 		'email'=>'required|email|min:2',

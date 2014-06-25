@@ -40,7 +40,7 @@
         <div class="form-group col-lg-12 form-group-front-page" id="dateGroup">
           <label>Vælg et tidspunkt for afholdelse af <span id="choice"></span></label>
           <div class='input-group date' data-date-format="YYYY/MM/DD HH:MM" id='timePicker'>
-            <input type='text' name="date" class="form-control" />
+            <input type="date" name="date" class="form-control" />
             <span class="input-group-addon"><span class="fa fa-calendar"></span>
           </span>
         </div>
