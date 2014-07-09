@@ -26,26 +26,26 @@
           <li>Andet: <em>{{ $product->notes }}</em></li>
         </ul>
             <div class="radios">
-            <input type="radio" name="activity_title" value="{{ $product->title }}" id="{{ $product->id }}">
-            <label class="radio" for="{{ $product->id }}" id="labelText">Bestil aktivitet</label>
-          </div>
+              <input type="radio" name="activity_title" value="{{ $product->title }}" id="{{ $product->id }}">
+              <label class="radio" for="{{ $product->id }}" id="labelText">Bestil nu</label>
+            </div>
       </div>
     </div>
   </div>
      <section class="submit-info-section clearfix" id="fadeInGroup">
-    <div class="container">
+     <div class="container">
       <div class="row">
       <div class="box submit-section-box">
-        <h2 class="text-center small-title">Fortsæt bestilling</h2>
-        <div class="form-group col-lg-12 form-group-front-page" id="dateGroup">
-          <label>Vælg et tidspunkt for afholdelse af <span id="choice"></span></label>
-          <div class='input-group date' data-date-format="YYYY/MM/DD HH:MM" id='timePicker'>
-            <input type="date" name="date" class="form-control" />
-            <span class="input-group-addon"><span class="fa fa-calendar"></span>
-          </span>
-        </div>
+      <h2 class="text-center small-title">Fortsæt bestilling</h2>
+      <div class="form-group col-lg-6 form-group-front-page" id="dateGroup">
+        <label>Vælg en dato for afholdelse af <span id="choice"></span></label>
+        <input type="text" name="date" class="date-form" id="datePicker">
       </div>
-      <div class="form-group col-lg-6 form-group-front-page" id="fnameGroup">
+   <!--    <div class="form-group col-lg-6 form-group-front-page">
+        <label>Vælg et tidspunkt for afholdelse af <span id="choice"></span></label>
+        <input type="text" name="date" class="date-form" id="timePicker">
+      </div> -->
+       <div class="form-group col-lg-6 form-group-front-page" id="fnameGroup">
         <label class="control-label">Fornavn</label>
         <input type="text" class="form-control" name="firstName" placeholder="Fornavn">
       </div>

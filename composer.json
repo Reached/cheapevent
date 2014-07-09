@@ -4,9 +4,10 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.2.*",
+		"laravel/framework": "4.1.*",
 		"intervention/image": "dev-master",
-		"marcanuy/popularity": "1.0.x"
+		"marcanuy/popularity": "1.0.x",
+		"laracasts/utilities": "~1.0"
 	},
 	"autoload": {
 		"classmap": [

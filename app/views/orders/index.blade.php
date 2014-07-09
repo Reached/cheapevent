@@ -7,7 +7,7 @@
   <h1 class="admin-page-main-title text-center">Ordrer</h1>
   	<div class="col-lg-12">
       <div class="box">
-      	<table class="table table-striped table-bordered orders-table">
+      	<table class="table table-striped table-bordered orders-table" id="orders">
       		<thead>
       			<tr>
       				<td><strong>Aktivitetens navn</strong></td>
@@ -29,5 +29,4 @@
     </div>
   </div>
 </div>
-
 @stop

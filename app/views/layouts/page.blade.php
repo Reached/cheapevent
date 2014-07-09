@@ -53,7 +53,7 @@ Copyright &copy; Cheapevent 2014. | CVR:
 </footer>
 
 <!-- Load JS here for greater good =============================-->
-{{ HTML::script('js/production.js') }}
+@include('layouts.partials.scripts')
 
 </body>
 

@@ -5,8 +5,7 @@
 		public function __contruct() {
 		parent::__construct();
 		$this->beforeFilter('csrf', array('on'=>'post'));
-		$this->beforeFilter('admin');
-	} 
+		} 
 
 		public function getIndex() {
 

@@ -31,6 +31,7 @@
               <nav class="nav-menu-top-logged-in">
                 <ul class="list-inline">
                   <li><a href="/admin">Administration <i class="fa fa-cog"></i> </a></li>
+                  <li><a href="/admin/bookings/index">Bookninger <i class="fa fa-calendar-o"></i> </a></li>
                   <li><a href="/admin/products/index">Opret ny aktivitet <i class="fa fa-plus"></i> </a></li>
                   <li><a href="/admin/orders">Ordrer <i class="fa fa-book"></i> </a></li>
                   <li><a href="{{ URL::route('getSignout') }}">Log ud <i class="fa fa-unlock"></i> </a></li>
@@ -48,7 +49,7 @@
 
       @yield('content-manage-categories')
 
-    {{ HTML::script('js/production.min.js') }}
+      @include('layouts.partials.scripts')
 
     </body>
 

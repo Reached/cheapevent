@@ -120,8 +120,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Intervention\Image\ImageServiceProvider',
-		'Marcanuy\Popularity\PopularityServiceProvider'
-
+		'Marcanuy\Popularity\PopularityServiceProvider',
+		'Laracasts\Utilities\UtilitiesServiceProvider'
 	),
 
 	/*

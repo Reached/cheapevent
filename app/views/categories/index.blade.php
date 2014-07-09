@@ -17,26 +17,26 @@
             @endforeach
           @endif
           <h3>Alle kategorier</h3>
-					<table class="table table-striped table-bordered orders-table">
-						<thead>
-							<tr>
-								<td><strong>Kategori</strong></td>
-								<td><strong>Slet</strong></td>
-							</tr>
-						</thead>
-						<tbody>
-						@foreach($categories as $category)
-							<tr>
-								<td>{{ $category->name }}</td>
-                <td>
-                {{ Form::open(array('url'=>'admin/categories/destroy')) }}
-                {{ Form::hidden('id', $category->id) }}
-                {{ Form::submit('Slet', array('class'=>'btn btn-small btn-danger')) }}
-                {{ Form::close() }}
-                </td>
-							</tr>
-						@endforeach
-          </tbody>
+		      <table class="table table-striped table-bordered orders-table">
+  					<thead>
+  							<tr>
+  								<td><strong>Kategori</strong></td>
+  								<td><strong>Slet</strong></td>
+  							</tr>
+  						</thead>
+  						<tbody>
+  						@foreach($categories as $category)
+  							<tr>
+  								<td>{{ $category->name }}</td>
+                  <td>
+                  {{ Form::open(array('url'=>'admin/categories/destroy')) }}
+                  {{ Form::hidden('id', $category->id) }}
+                  {{ Form::submit('Slet', array('class'=>'btn btn-small btn-danger')) }}
+                  {{ Form::close() }}
+                  </td>
+  							</tr>
+  						@endforeach
+            </tbody>
           </table>
 
 				<h3>Opret ny kategori</h3>
