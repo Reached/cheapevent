@@ -8,7 +8,7 @@
       @if(Session::has('message'))
         <p class="alert alert-success">{{ Session::get('message') }}</p>
       @endif
-        <h2 class="admin-page-main-title text-center">Administrer bookninger</h2>
+        <h2 class="admin-page-main-title text-center">Administrer bookningerzzz</h2>
         <div class="box">
         {{ Form::open(array('url'=>'/admin/bookings/create')) }}
           <div class="form-group">
