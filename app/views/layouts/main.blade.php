@@ -20,7 +20,6 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
       <![endif]-->
-      {{ HTML::script('js/modernizr.custom.js') }}
     </head>
     <body>
 
