@@ -24,6 +24,8 @@
 		public function postCreate() {
 		$validator = Validator::make(Input::all(), Booking::$rules);
 
+		var_dump();
+
 		if ($validator->passes()) {
 			$booking = new Booking;
 			$booking->date = Input::get('date');
