@@ -43,7 +43,7 @@
       <section class="intro-section" id="home">
         <div class="header-bg">
           <div class="container">
-            <a href="/" class="logo"><span style="font-weight: bold;">Cheapszzzz</span><span style="font-weight: 100;">Event</span></a>
+            <a href="/" class="logo"><span style="font-weight: bold;">Cheap</span><span style="font-weight: 100;">Event</span></a>
             <a id="trigger-overlay" class="menu-btn"><i class="fa fa-bars"></i></a>
             <div class="overlay overlay-hugeinc">
               <div class="container">
