@@ -57,7 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'cheapevent',
 			'username'  => 'forge',
-			'password'  => 'FPcPKK4gtgJ5sFPhYa2E',
+			'password'  => 'CkaLqRvblPwfOYZwcaSy',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
